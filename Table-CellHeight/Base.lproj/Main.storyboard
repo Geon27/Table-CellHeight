@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--글목록-->
         <scene sceneID="Tu5-p7-Vne">
             <objects>
                 <tableViewController id="y87-B7-cRu" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="y87-B7-cRu" id="IMn-PF-cBM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="gfL-fY-hJN"/>
+                    <navigationItem key="navigationItem" title="글목록" id="gfL-fY-hJN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGo-b2-Wmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
