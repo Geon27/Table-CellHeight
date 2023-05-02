@@ -9,4 +9,6 @@ import UIKit
 class ListViewController: UITableViewController {
     // 테이브 뷰에 연결된 데이터를 저장하는 배열
     var list = [String]()
+    @IBAction func add(_ sender: Any) {
+    }
 }
