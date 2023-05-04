@@ -12,5 +12,10 @@ class ListViewController: UITableViewController {
     @IBAction func add(_ sender: Any) {
     // 알림창 객체의 입력폼을 추가한다
         let alert = UIAlertController(title: "목록입력", message: "추가될 글을 작성해주세요", preferredStyle: .alert)
+        // 알림창에 입력폼을 추가한다
+        alert.addTextField() { (tf) in
+            tf.placeholder = "내용을 입력하세요"
+        }
+        // ok 버튼 객체를 생성한다: 아직 알림창 객체에 버튼이 등록되지 않은 상태
     }
 }
