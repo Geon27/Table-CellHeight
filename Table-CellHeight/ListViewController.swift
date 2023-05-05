@@ -17,5 +17,9 @@ class ListViewController: UITableViewController {
             tf.placeholder = "내용을 입력하세요"
         }
         // ok 버튼 객체를 생성한다: 아직 알림창 객체에 버튼이 등록되지 않은 상태
+        let ok = UIAlertAction(title: "OK", style: .default) { (_) in
+        // 알림창의 0번째 입력필드에 값이 있다면
+            
+        }
     }
 }
