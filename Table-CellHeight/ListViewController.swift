@@ -26,6 +26,8 @@ class ListViewController: UITableViewController {
             }
         }
     // 취소 버튼 객체를 생성한다: 아직 알림창 객체에 버튼이 등록되지 않은 상태
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         
+    // 알림창 객체에 버튼 객체를 등록한다
     }
 }
