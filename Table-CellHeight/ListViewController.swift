@@ -21,8 +21,11 @@ class ListViewController: UITableViewController {
         // 알림창의 0번째 입력필드에 값이 있다면
             if let title = alert.textFields?[0].text {
         // 배열에 입력된 값을 추가하고 테이블을 갱신
-                
+                self.list.append(title)
+                self.tableView.reloadData()
             }
         }
+    // 취소 버튼 객체를 생성한다: 아직 알림창 객체에 버튼이 등록되지 않은 상태
+        
     }
 }
