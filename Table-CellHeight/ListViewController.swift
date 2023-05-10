@@ -35,4 +35,7 @@ class ListViewController: UITableViewController {
     // 알림창을 띄운다.
         self.present(alert, animated: false)
     }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.list.count
+    }
 }
