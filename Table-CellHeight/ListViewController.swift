@@ -29,5 +29,10 @@ class ListViewController: UITableViewController {
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         
     // 알림창 객체에 버튼 객체를 등록한다
+        alert.addAction(ok)
+        alert.addAction(cancel)
+    
+    // 알림창을 띄운다.
+        self.present(alert, animated: false)
     }
 }
