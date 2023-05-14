@@ -47,12 +47,4 @@ class ListViewController: UITableViewController {
         cell.textLabel?.text = list[indexPath.row]
         return cell
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt IndexPath:
-        IndexPath) -> CGFloat {
-        let row = self.list[IndexPath.row]
-        
-        // 높이를 조절. 기본 높이 60 + 글의 길이가 30자를 넘어갈때 마다 20만큼씩 높이를 올린다
-        let height = CGFloat(60 + (row.count / 30) * 20)
-        return height
-    }
 }
