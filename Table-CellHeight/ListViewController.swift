@@ -41,6 +41,8 @@ class ListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // "cell" 이라는 아이디를 가진 셀을 읽어온다. 없으면 UITableViewCell 인스턴스 생성
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        // 추가부분(셀의 기본 텍스트 레이블 행 수 제한을 없앤다)
+        cell.textLabel?.numberOfLines = 0
         // 셀의 기본 텍스트 레이블에 배열 변수값 할당
         cell.textLabel?.text = list[indexPath.row]
         return cell
